@@ -13,13 +13,14 @@ napkite 엔진
 
 React는 위의 두문제를 **VirtualDOM**으로 해결
 
-VirtualDOM 간략한 설명
-1. 데이터가 변경되기전에 산출된 가상 DOM vs 데이터가 변경된 후에 산출된 가상 DOM 차이점 연산
-2. 실제 DOM에서 업데이트되어야 하는 부분만 업데이트
+VirtualDOM 간략한 설명<br>
+1. 데이터가 변경되기전에 산출된 가상 DOM vs 데이터가 변경된 후에 산출된 가상 DOM 차이점 연산<br>
+2. 실제 DOM에서 업데이트되어야 하는 부분만 업데이트<br>
 
 애플리케이션 UI상태와 데이터 모델의 상태를 동기화하는 방법 중 하나는 양방향 데이터 바인딩
-`KVO(Key-Value Observing)` - Ember.js, Knockout, Backbone, IOS
-`dirty checking` - Angular
+
+`KVO(Key-Value Observing)` - Ember.js, Knockout, Backbone, IOS<br>
+`dirty checking` - Angular<br>
 
 
 ## react, react-dom 두개의 package
@@ -83,7 +84,9 @@ ReactDOM.render(ReactElement, DOMElement, callback);
 ```
 
 `ReactElement` - `ReactNode`트리의 루트 엘리먼트
+
 `DOMElement` - 해당 트리의 DOM 노드 컨테이너
+
 `callback` - 트리가 렌더링되거나 업데이트 된 후에 실행되는 함수
 
 
@@ -93,9 +96,13 @@ ReactDOM.render(ReactElement, DOMElement, callback);
 $ npm install <package-name>
 ```
 재사용 하고자 하는 모든 Node.js 애플리케이션들을 어디서 얻을지 어떻게 아느냐?
+
 npm 패키지안에는 해당 패키지와 관련된 메타데이터를 설명하는 `package.json`파일 있다.
+
 보통 `package.json`은 npm 레지스트르에 패키지를 등록할 경우에만 필요
+
 애플리케이션이 요구하는 의존 패키지 리스트를 저장하는 데에 사용가능
+
 의존성리스트를 저장하고 하면 언제든지 `npm install`명령을 이용해서 해당 패키지 설치 가능
 
 **package.json**은 그럼 어떻게 생성할까?
